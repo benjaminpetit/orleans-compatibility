@@ -1,0 +1,8 @@
+<Project>
+
+  <PropertyGroup>
+    <OrleansCurrent Condition=" '$(OrleansCurrent)'=='' ">2.0.0</OrleansCurrent>
+	<OrleansNext Condition=" '$(OrleansNext)'=='' ">2.0.0-ci.20180330.5</OrleansNext>
+  </PropertyGroup>
+
+</Project>

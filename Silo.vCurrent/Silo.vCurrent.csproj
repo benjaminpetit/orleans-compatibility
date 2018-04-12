@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>Silo</AssemblyName>
+    <ApplicationIcon />
+    <StartupObject />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <RootNamespace>Silo</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Orleans.OrleansRuntime" Version="$(OrleansCurrent)" />
+    <PackageReference Include="Microsoft.Orleans.OrleansProviders" Version="$(OrleansCurrent)" />
+    <PackageReference Include="Microsoft.Orleans.Clustering.AzureStorage" Version="$(OrleansCurrent)" />
+    <PackageReference Include="Microsoft.Orleans.Core.Abstractions" Version="$(OrleansCurrent)" />
+    <PackageReference Include="Microsoft.Orleans.Reminders.AzureStorage " Version="$(OrleansCurrent)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Grains.vCurrent\Grains.vCurrent.csproj" />
+    <ProjectReference Include="..\Tests.Common\Tests.Common.csproj" />
+  </ItemGroup>
+</Project>
